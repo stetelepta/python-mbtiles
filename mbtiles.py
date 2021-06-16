@@ -24,7 +24,7 @@ class MbtileSet:
             z, x, y = row[:3]
             tile = Mbtile(z, x, y, self.conn, self.origin)
             tile.write_png(self.outdir)
-            tile.write_json(self.outdir)
+            #tile.write_json(self.outdir)
 
     def get_tile(self, z, x, y):
         return Mbtile(z, x, y, self.conn, self.origin)
